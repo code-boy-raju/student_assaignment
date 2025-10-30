@@ -1,0 +1,25 @@
+
+@import "tailwindcss";
+
+
+html, body, #root {
+  height: 100%;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white px-4 py-2 rounded-md shadow-sm hover:bg-blue-700;
+}
+
+button:focus {
+  outline: 2px solid rgba(37,99,235,0.3);
+}
+
+@keyframes bounce-in {
+  0% { transform: scale(0.9); opacity: 0; }
+  60% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+.animate-bounce-in {
+  animation: bounce-in 0.4s ease-out;
+}
